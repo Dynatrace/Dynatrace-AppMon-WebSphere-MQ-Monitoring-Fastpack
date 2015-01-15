@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ATTENTION - THIS IS AN AUTOMATICALLY GENERATED FILE -->
+<!-- Manual changes can cause severe problems and system instability -->
+<!-- Apply manual changes only if you have received explicit instructions from dynaTrace Support -->
+<dynatrace version="3.2.0.0" date="5/5/10 3:24 PM">
+  <dashboardconfig memento.version="3.2.0.0" id="3a2b6427-b9e4-474f-a53c-5373c67744aa" revision="00000128-68a3-5409-a19f-ed9b60680b56" icon="com.dynatrace.diagnostics.portlets/icons/dtdserver.gif" source="server://komma" sessiontype="live" description="" name="WebSphere MQ Queue" opendrilldowninnewdashboard="true" sessionid="MQ Monitoring" bgcolor="255,255,255,255" mode="EDIT">
+    <reportconfig lines.per.table="100" orientation="portrait" print.legends="true" enabled="true" title="" description="" levels.per.tree="10" override="false" print.images="true" type="PDF" />
+    <filter>
+      <criterion type="timeframe">
+        <timeframe start="0" type="Auto" end="9223372036854775807" />
+      </criterion>
+    </filter>
+    <autorefreshconfig unit="SECONDS" enabled="true" time="10" />
+    <dashboardlayout>
+      <portletfolder relationtype="LEFT" portletdecorationvisible="false" ratio="0.95" folderid="org.eclipse.ui.internal.ViewStack@127dd93" selectionindex="0" relatedfolderid="DashboardLayout.blankArea" portletconfigorder="35e30b07-acce-4efd-be76-acf5ebd2e0c3" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.111827955" folderid="org.eclipse.ui.internal.ViewStack@1571194" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@127dd93" portletconfigorder="301a734e-53fe-45dd-b5b4-4112a3797e5f" />
+      <portletfolder relationtype="BOTTOM" ratio="0.20386007" folderid="org.eclipse.ui.internal.ViewStack@1670fa5" selectionindex="-1" isplaceholder="true" relatedfolderid="org.eclipse.ui.internal.ViewStack@1571194" portletconfigorder="" />
+      <portletfolder relationtype="BOTTOM" ratio="0.46818182" folderid="org.eclipse.ui.internal.ViewStack@b63326" selectionindex="-1" isplaceholder="true" relatedfolderid="org.eclipse.ui.internal.ViewStack@1670fa5" portletconfigorder="" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.20286086" folderid="org.eclipse.ui.internal.ViewStack@1ec9a88" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@b63326" portletconfigorder="c9567c0a-6671-43f2-9f94-52c5ffb19c11" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.46666667" folderid="org.eclipse.ui.internal.ViewStack@1caa355" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1ec9a88" portletconfigorder="ccc66bf0-fe12-492e-afa0-57a25900f908" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.11059908" folderid="org.eclipse.ui.internal.ViewStack@1e2bca8" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1caa355" portletconfigorder="b47edfde-80b7-41b7-8505-ec525b5c4f81" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.12935324" folderid="org.eclipse.ui.internal.ViewStack@1a8e9b" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1e2bca8" portletconfigorder="a19a7e46-5966-483c-948f-e8f21da9eac8" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.61173815" folderid="org.eclipse.ui.internal.ViewStack@520265" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1ec9a88" portletconfigorder="6870a61c-f28c-479e-9156-fa4b1f3d149f" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.12935324" folderid="org.eclipse.ui.internal.ViewStack@13cb04a" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@520265" portletconfigorder="2806b2e3-0e0d-46b1-8ce3-b86908710e81" />
+      <portletfolder relationtype="BOTTOM" ratio="0.38187703" folderid="org.eclipse.ui.internal.ViewStack@124c287" selectionindex="-1" isplaceholder="true" relatedfolderid="org.eclipse.ui.internal.ViewStack@1670fa5" portletconfigorder="" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.20026007" folderid="org.eclipse.ui.internal.ViewStack@1c93ff2" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1670fa5" portletconfigorder="254dc043-8589-403c-b100-82d439a1b041" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.50585175" folderid="org.eclipse.ui.internal.ViewStack@d4b3a3" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1c93ff2" portletconfigorder="706980a1-08b1-4cee-a90c-72c54addf21c" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.090614885" folderid="org.eclipse.ui.internal.ViewStack@9ae5b3" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@d4b3a3" portletconfigorder="333997a3-04e1-4774-b346-85bd10be13f9" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.49466193" folderid="org.eclipse.ui.internal.ViewStack@d3cb39" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@9ae5b3" portletconfigorder="9421cce0-4597-468b-acfa-adbe5b314d48" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.5" folderid="org.eclipse.ui.internal.ViewStack@c0e9fc" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@d3cb39" portletconfigorder="cad17356-72a2-46a2-8598-176c5887d5f0" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.103559874" folderid="leftFolder" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1c93ff2" portletconfigorder="abb206a6-5208-410b-b80b-7164aa13deba" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.49458483" folderid="org.eclipse.ui.internal.ViewStack@10483a3" selectionindex="0" relatedfolderid="leftFolder" portletconfigorder="3ad33c61-03d8-44bc-b227-9ea661ad24c9" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.5" folderid="org.eclipse.ui.internal.ViewStack@15ef6dc" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@10483a3" portletconfigorder="a90dc6bc-8e18-4f93-be12-e055e918396a" />
+      <portletfolder relationtype="BOTTOM" portletdecorationvisible="false" ratio="0.17751479" folderid="org.eclipse.ui.internal.ViewStack@69bb6d" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1571194" portletconfigorder="e5a886d8-0f4f-440e-beae-ba6cfcd5fc53" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.1313394" folderid="org.eclipse.ui.internal.ViewStack@1183ae2" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@69bb6d" portletconfigorder="caeae640-3205-4394-8904-0de457859a9a" />
+      <portletfolder relationtype="RIGHT" portletdecorationvisible="false" ratio="0.744012" folderid="org.eclipse.ui.internal.ViewStack@1b14df5" selectionindex="0" relatedfolderid="org.eclipse.ui.internal.ViewStack@1183ae2" portletconfigorder="bd06429e-c7e8-4bd0-8f57-466b28eadeab" />
+    </dashboardlayout>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@d3cb39" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="9421cce0-4597-468b-acfa-adbe5b314d48" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Input handle count" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="9" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@c0e9fc" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="cad17356-72a2-46a2-8598-176c5887d5f0" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="0" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="1,1" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="LineChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="105e0726-5bed-49e9-a7fa-9628d6bd003e" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Input handle count" sourcecolor="RGB(64,0,0,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Input handle count" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Input handle count" metrickeyid="Input handle count" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1183ae2" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="caeae640-3205-4394-8904-0de457859a9a" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="2" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" bounds.y.upper="9.0" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="Status" zoomable="true" showtooltips="true" bounds.y.lower="0.0" charttype="ClusteredBarChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="true" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="0" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="854a8ad6-5390-43c2-8508-b6e8fdb1ed71" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Status" sourcecolor="RGB(0,64,0,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="false">
+            <lightweightuniquemeasureidentifier keyid="Status" metricgroupkey="WebSphere MQ Queue Manager" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Status" metrickeyid="Status" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="172" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1caa355" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="ccc66bf0-fe12-492e-afa0-57a25900f908" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Oldest message age" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="5" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@d4b3a3" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="706980a1-08b1-4cee-a90c-72c54addf21c" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Duration since last read" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="4" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1e2bca8" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="b47edfde-80b7-41b7-8505-ec525b5c4f81" addfilterinfo="false" source="server://komma" description="" lastvalue="true" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="6" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap>
+          <inheritanceentry inherited="false" type="timeframe" />
+        </inheritancemap>
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="false" subchartweights="1000" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="MeterChart" axis.y.title.show="true" resolution="Auto" axis.x.show="false" title="" yaxisalignment="0" splitcharts="true" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="false" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="50275af3-769e-4ef9-8240-3022008a7c67" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Oldest message age" sourcecolor="RGB(192,64,192,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Oldest message age" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Oldest message age" metrickeyid="Oldest message age" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1571194" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="301a734e-53fe-45dd-b5b4-4112a3797e5f" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Queue manager status" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="17" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1b14df5" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(255,255,255,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="bd06429e-c7e8-4bd0-8f57-466b28eadeab" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="LEFT" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="0: ENDED UNEXPECTEDLY&#xA;1:&#x9;ENDED PREEMPTIVELY&#xA;2: ENDED IMMEDIATELY&#xA;3: ENDED NORMALLY&#xA;4: ENDING PREEMPTIVELY&#xA;5: ENDING IMMEDIATELY&#xA;6: QUIESCING&#xA;7: STARTING&#xA;8: RUNNING&#xA;&#x9;" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(0,0,0,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="1" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="9" style="NORMAL" name="Arial" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@15ef6dc" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="a90dc6bc-8e18-4f93-be12-e055e918396a" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="7" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="1000" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="LineChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="true" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="false" max="false" measure="true" count="false" last="false" sum="false" agent="false" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="f661a186-401c-405c-9187-270cccee3745" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Output handle count" sourcecolor="RGB(192,128,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Output handle count" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Output handle count" metrickeyid="Output handle count" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1a8e9b" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="a19a7e46-5966-483c-948f-e8f21da9eac8" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="8" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="AreaChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="true" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="f542369a-5376-4669-a019-9e6b470aae65" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Oldest message age" sourcecolor="RGB(192,64,192,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Oldest message age" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Oldest message age" metrickeyid="Oldest message age" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@10483a3" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="3ad33c61-03d8-44bc-b227-9ea661ad24c9" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Input handle count" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="10" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="leftFolder" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="abb206a6-5208-410b-b80b-7164aa13deba" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="11" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="AreaChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="56c4239c-c5fc-488f-807f-70f159d22711" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Duration since last insert" sourcecolor="RGB(0,0,0,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Duration since last insert" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Duration since last insert" metrickeyid="Duration since last insert" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@9ae5b3" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="333997a3-04e1-4774-b346-85bd10be13f9" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="12" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe unit="MINUTES" offset="30" type="Offset Custom" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="AreaChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="f9444ad1-638c-4b49-b794-af71508fd46a" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Duration since last read" sourcecolor="RGB(128,0,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Duration since last read" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Duration since last read" metrickeyid="Duration since last read" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@13cb04a" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="2806b2e3-0e0d-46b1-8ce3-b86908710e81" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="13" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe unit="MINUTES" offset="30" type="Offset Custom" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="200" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="AreaChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="false" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="true" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="45cc5a2f-9297-4bd7-b4fd-a7500c16503b" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Queue depth" sourcecolor="RGB(0,128,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Queue depth" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Queue depth" metrickeyid="Queue depth" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@127dd93" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="35e30b07-acce-4efd-be76-acf5ebd2e0c3" addfilterinfo="false" source="server://komma" description="" lastvalue="false" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="14" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="1,1" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="166,166,166,166,166,166" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="TrafficLightChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="true" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="true" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="false" max="false" measure="true" count="false" last="false" sum="false" agent="false" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="bc49bf3b-0945-40ac-abef-7af1f9e68251" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Output handle count" sourcecolor="RGB(192,128,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Output handle count" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Output handle count" metrickeyid="Output handle count" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <chartsource position="2" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="10fcb46b-2578-4a3f-9511-66d2dedb0865" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Queue depth" sourcecolor="RGB(0,128,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Queue depth" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Queue depth" metrickeyid="Queue depth" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <chartsource position="3" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="bdc7f353-31dd-4c2e-a51f-5e7cd8dbcd24" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Oldest message age" sourcecolor="RGB(192,64,192,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Oldest message age" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Oldest message age" metrickeyid="Oldest message age" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <chartsource position="4" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="77e14401-c331-4c4f-8c5c-58d30f7483b3" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Input handle count" sourcecolor="RGB(64,0,0,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Input handle count" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Input handle count" metrickeyid="Input handle count" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <chartsource position="5" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="95ec7eec-bc8f-414c-b6a1-0f553f25d204" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Duration since last read" sourcecolor="RGB(128,0,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Duration since last read" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Duration since last read" metrickeyid="Duration since last read" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <chartsource position="6" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="s" fetchmeasurecolor="true" id="f7143d2f-fa94-47e4-b0fd-e3aa78adbfad" displayrate="auto" unit="s" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Duration since last insert" sourcecolor="RGB(0,0,0,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Duration since last insert" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Duration since last insert" metrickeyid="Duration since last insert" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="s" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Vertical" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1ec9a88" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="c9567c0a-6671-43f2-9f94-52c5ffb19c11" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Queue depth" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="15" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@520265" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="6870a61c-f28c-479e-9156-fa4b1f3d149f" addfilterinfo="false" source="server://komma" description="" lastvalue="true" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="16" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap>
+          <inheritanceentry inherited="false" type="timeframe" />
+        </inheritancemap>
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="500,500" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="false" subchartweights="1000" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="MeterChart" axis.y.title.show="true" resolution="Auto" axis.x.show="false" title="" yaxisalignment="0" splitcharts="true" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="false" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="45cc5a2f-9297-4bd7-b4fd-a7500c16503b" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Queue depth" sourcecolor="RGB(0,128,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="false" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Queue depth" metricgroupkey="WebSphere MQ Queue" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Queue depth" metrickeyid="Queue depth" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+    <portletconfig com.dynatrace.diagnostics.portlets.text.textportletconfig.backgroundstyle="topLeft" icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@1c93ff2" com.dynatrace.diagnostics.portlets.text.textportletconfig.wallpapercolor="RGB(0,128,192,255)" usedashboardsource="true" heightmode="AdjustToFontSize" bgcolor="236,233,216,255" id="254dc043-8589-403c-b100-82d439a1b041" addfilterinfo="false" source="server://komma" invertcolors="true" com.dynatrace.diagnostics.portlets.text.textportletconfig.alignment="CENTER" com.dynatrace.diagnostics.portlets.text.textportletconfig.text="Duration since last insert" description="" name="Text" typeid="com.dynatrace.diagnostics.portlets.text.Text" com.dynatrace.diagnostics.portlets.text.textportletconfig.defaultforegroundcolor="RGB(255,255,255,255)">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="18" />
+      <filter>
+        <inheritancemap />
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="5" />
+      <sashconfig weights="1,1" displayoption="CHART_AND_TABLE" />
+      <font height="12" style="NORMAL" name="Arial Black" />
+    </portletconfig>
+    <portletconfig icon="com.dynatrace.diagnostics.sdk/default.gif" usespecificautorefresh="false" usedashboardsourceforcompare="true" folderid="org.eclipse.ui.internal.ViewStack@69bb6d" sessiontype="live" usedashboardsource="true" sessionid="MQ Monitoring" bgcolor="236,233,216,255" id="e5a886d8-0f4f-440e-beae-ba6cfcd5fc53" addfilterinfo="false" source="server://komma" description="" lastvalue="true" name="Chart" typeid="com.dynatrace.diagnostics.portlets.chart.Chart" showabsolutevalues="false">
+      <reportconfig lines.per.table="100" print.legends="true" enabled="true" levels.per.tree="10" override="false" print.images="true" reportposition="3" />
+      <filter>
+        <criterion type="timeframe">
+          <timeframe start="0" type="Auto" end="9223372036854775807" />
+        </criterion>
+        <inheritancemap>
+          <inheritanceentry inherited="false" type="timeframe" />
+        </inheritancemap>
+      </filter>
+      <autorefreshconfig unit="MINUTES" enabled="false" time="1" />
+      <sashconfig weights="1,1" displayoption="CHART" />
+      <datamodelconfig>
+        <chart axis.y.show="true" subchartweights="1000" orientation="Horizontal" axis.x.title="" legendposition="Bottom" axis.y.title="" zoomable="true" showtooltips="true" charttype="TrafficLightChart" axis.y.title.show="true" resolution="Auto" axis.x.show="true" title="" yaxisalignment="0" splitcharts="true" bounds.y.enabled="false" axis.x.title.show="true" logxaxis="false" showlegend="false" showtitle="false" showvalues="false">
+          <legendcomposition min="false" aggregationfromseries="false" scale="false" host="true" max="false" measure="true" count="false" last="false" sum="false" agent="true" aggregation="false" unit="false" avg="false" />
+          <chartsource position="1" scale="-2147483648" visible="true" sessiontype="live" dynamicconfig="false" aggregationtype="Avg" autounit="false" sessionid="MQ Monitoring" uiunit="number" fetchmeasurecolor="true" id="99ef62a8-0d85-4893-a4ec-0bd3eb80dae3" displayrate="auto" unit="number" systemid="MQ Monitoring" overridesource="false" rate="10s" ratesupported="true" name="Running" sourcecolor="RGB(64,192,64,255)" measuretype="MonitorMeasure" sourcetype="MEASURE" fetchthreshold="true" fetch.dynamic.measures="false" autoscale="true">
+            <lightweightuniquemeasureidentifier keyid="Running" metricgroupkey="WebSphere MQ Queue Manager" collector="" systemid="MQ Monitoring" agenthost="" parentkeyid="Running" metrickeyid="Running" agentname="WebSphere MQ Queue Monitor" />
+            <displaysourceinfo monitorhost="Embedded dynaTrace Collector" monitordetails="WebSphere MQ Queue Monitor" measureunit="number" monitorscheduleid="WebSphere MQ Queue Monitor" measurerate="purepath" />
+          </chartsource>
+          <splitconfig splitmode="PerSeries" splitlayout="Horizontal" />
+        </chart>
+        <table name="The Measure table" sortcolumn="0" viewmode="Hierarchy" columnorder="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16">
+          <column index="0" sort="Up" forcevisible="false" hidden="false" width="150" />
+          <column index="1" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="2" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="3" sort="None" forcevisible="false" hidden="false" width="10" />
+          <column index="4" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="5" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="6" sort="None" forcevisible="false" hidden="false" width="50" />
+          <column index="7" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="8" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="9" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="10" sort="None" forcevisible="false" hidden="false" width="75" />
+          <column index="11" sort="None" forcevisible="false" hidden="true" width="75" />
+          <column index="12" sort="None" forcevisible="false" hidden="false" width="100" />
+          <column index="13" sort="None" forcevisible="false" hidden="false" width="105" />
+          <column index="14" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="15" sort="None" forcevisible="false" hidden="true" width="50" />
+          <column index="16" sort="None" forcevisible="false" hidden="true" width="50" />
+        </table>
+      </datamodelconfig>
+      <chartcolors />
+    </portletconfig>
+  </dashboardconfig>
+</dynatrace>
+
